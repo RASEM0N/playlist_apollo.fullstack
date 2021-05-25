@@ -23,6 +23,7 @@ package-lock.json
 yarn.lock
 
 todo.txt
+.env.dev
 
 # misc
 .DS_Store
