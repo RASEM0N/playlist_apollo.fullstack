@@ -3,8 +3,11 @@ const express = require('express')
 const graphqlHTTP = require('express-graphql').graphqlHTTP
 const schema = require('./schema/schema')
 dotenv.config({ path: './.env.dev' })
+const connectDB = require('./core/db')
 
 const app = express()
+
+connectDB()
 
 app.use(
     '/graphql',
