@@ -4,11 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev:server": "npm run dev --prefix ./server",
+    "dev:client": "npm run start --prefix ./client",
+    "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "prettier": "2.3.0"
+  },
+  "dependencies": {
+    "concurrently": "^6.2.0"
   }
 }
