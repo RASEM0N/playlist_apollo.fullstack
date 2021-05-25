@@ -3,10 +3,11 @@ const mongoose = require('mongoose')
 const BookSchema = new mongoose.Schema({
     name: {
         type: String,
+        unique: true,
         required: true,
     },
     genre: {
-        type: Number,
+        type: String,
         required: true,
     },
     authorId: {
