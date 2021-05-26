@@ -1,11 +1,12 @@
 import BookList from './components/BookList'
-import Book from './components/Book'
+import AddBook from './components/AddBook'
 
-function App() {
+const App = () => {
     return (
-        <div className='App'>
+        <div className="main">
             <h1>Application</h1>
             <BookList />
+             <AddBook />
         </div>
     )
 }
